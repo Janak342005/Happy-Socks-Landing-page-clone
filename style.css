@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 213, 217);;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 213, 217);
+}
+
+#navbar{
+    width: 100%;
+    height: 150px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid black;
+}
+
+#navbar h3{
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: 800;
+    border: 2px solid black;
+    padding: 5px 15px;
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-style: oblique;
+    cursor: pointer;
+}
+
+#navbar h3:hover{
+    background-color: crimson;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    word-spacing: 50px;
+    position: relative;
+}
+
+.text h2{
+    font-size: 130px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 10px;
+    
+}
+
+.text h2::before{
+  content: "happy";
+  font-size: 130px;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-style: oblique;
+  letter-spacing: 10px;
+  -webkit-text-stroke: 4px black;
+  color: transparent;
+  position: absolute;
+  left: 8%;
+  top: 8%;
+
+}
+
+.secondHeading::after{
+     content: "socks";
+     font-size: 130px;
+     text-transform: uppercase;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 900;
+     font-style: oblique;
+     letter-spacing: 10px;
+     -webkit-text-stroke: 4px black;
+     color: transparent;
+     position: absolute;
+     right: 8%;
+     top: 8%;
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+    /* background-color: brown; */
+    position: relative;
+}
+
+#mainImage{
+    width: 80%;
+    height: 80%;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 80px;
+    padding: 40px;
+}
+
+#mainImage>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    scale: 1;
+    transition: all ease 0.3;
+}
+
+.wrapper1{
+    width: 280px;
+    height: 250px;
+    border: 2px solid black;
+    position: absolute;
+    left: 5%;
+    top: 2%;
+    transform: rotate(10deg);
+    border-radius: 5px;
+    z-index: 11;
+    cursor: pointer;
+}
+
+.sideImage1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+
+.wrapper1::before{
+    content: "";
+    width: 280px;
+    height: 250px;
+    border: 2px solid black;
+    position: absolute;
+    left: 8%;
+    bottom: 8%;
+    background: url(https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wrapper1:hover::before{
+    border-radius: 20px;
+    bottom: 10%;
+}
+
+.wrapper1:hover{
+    border-radius: 20px;
+    bottom: 10%;
+}
+
+.wrapper1:hover>img{
+    border-radius: 20px;
+}
+
+.wrapper2{
+    width: 280px;
+    height: 250px;
+    border: 2px solid black;
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    transform: rotate(-10deg);
+    border-radius: 5px;
+    z-index: 11;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.sideImage2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+
+.wrapper2::before{
+    content: "";
+    width: 280px;
+    height: 250px;
+    border: 2px solid black;
+    position: absolute;
+    right: 8%;
+    bottom: 8%;
+    background: url(./Image\ 2.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    background-color: aqua;
+    cursor: pointer;
+
+}
+
+
+.wrapper2:hover::before{
+    border-radius: 20px;
+    bottom: 9%;
+}
+
+.wrapper2:hover{
+    border-radius: 20px;
+    bottom: 16%;
+}
+
+.wrapper2:hover>img{
+    border-radius: 20px;
+}
+
+
+
+.firstoval{
+    width: 250px;
+    height: auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: rgb(141, 241, 110);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: absolute;
+    top: -8%;
+    right: 10%;
+    transform: rotate(-10deg);
+
+}
+
+
+.secondoval{
+    width: 250px;
+    height: auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: rgb(141, 241, 110);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    transform: rotate(10deg);
+
+}
+
+
+
+.finalPart{
+    width: 90px;
+    height: 90px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.finalPart img{
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
